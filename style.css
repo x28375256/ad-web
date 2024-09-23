@@ -1,14 +1,17 @@
 /*電腦裝置顯示*/
 
-.wrap{
+body {
+  background-color: black;
+
+  .wrap{
     margin:0 auto;
 }
 
 img{
     display: block;
     margin: 0 auto;
-    height: 10%;
-    width: 30%;
+    height: 30%;
+    width: 25%;
 
 }
 
@@ -18,17 +21,15 @@ img{
     margin: 0 auto;
 }
 
-body {
-    background-color: black;
-  }
+
 
   
   .gogo {
     margin: auto;
     width: 95%;
-    line-height: 80px;
+    line-height: 300%;
     color: #fff;
-    font-size: 30px;
+    font-size: 120px;
     border: 2px solid red;
     border-radius: 10px;
     background: red;
@@ -66,15 +67,84 @@ body {
   .gogo::after {
     animation: clippath 3s infinite -1.5s linear;
   }
+
+}
+
   
   /*手機裝置顯示*/
 @media screen and (max-device-width: 768px){
  
   img{
-    height: 100%;
-    width: 50%;
-
+    height: 80%;
+    width: 100%;
     }
 
+    .wrap{
+      margin:0 auto;
+  }
+  
+  img{
+      display: block;
+      margin: 0 auto;
+      height: 30%;
+      width: 25%;
+  
+  }
+  
+  .content{
+      width: auto;
+      height: auto;
+      margin: 0 auto;
+  }
+  
+  body {
+      background-color: black;
+    }
+  
+    
+    .gogo {
+      margin: auto;
+      width: 95%;
+      line-height: 80px;
+      color: #fff;
+      font-size: 30px;
+      border: 2px solid red;
+      border-radius: 10px;
+      background: red;
+      transition: all .3s;
+      cursor: pointer;
+      z-index: 99999;
+      position: absolute;
+      bottom: 100px;
+      text-align: center;
+      position: sticky;
+    }
+  
+    .gogo:hover {
+      filter: contrast(1.1);
+    }
+  
+    .gogo:active {
+      filter: contrast(0.9);
+    }
+  
+    .gogo::before,
+    .gogo::after {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      right: -10px;
+      bottom: -10px;
+      border: 2px solid red;
+      transition: all .5s;
+      animation: clippath 3s infinite linear;
+      border-radius: 10px;
+    }
+  
+    .gogo::after {
+      animation: clippath 3s infinite -1.5s linear;
+    }
+    
 
 }
