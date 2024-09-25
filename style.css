@@ -10,8 +10,7 @@ body {
 img{
     display: block;
     margin: 0 auto;
-    height: 80%;
-    width: 100%;
+
 
 }
 
@@ -74,10 +73,7 @@ img{
   /*手機裝置顯示*/
 @media screen and (max-device-width: 768px){
  
-  img{
-    height: 80%;
-    width: 100%;
-    }
+
 
     .wrap{
       margin:0 auto;
@@ -86,8 +82,7 @@ img{
   img{
       display: block;
       margin: 0 auto;
-      height: 80%;
-      width: 100%;
+
   
   }
   
